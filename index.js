@@ -17,8 +17,7 @@ app.use('/note',noteRouter)
 app.use('/allTags',specificRoute)
 app.get('/', (req, res) => {
     res.send("he rec")
-    // res.send(quotes)
-    // res.send("hello")
+
 });
 app.get('/random', (req, res) => {
     let index=Math.floor(Math.random()*quotes.length)

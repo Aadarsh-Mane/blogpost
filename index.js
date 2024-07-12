@@ -23,7 +23,6 @@ app.get('/random', (req, res) => {
     let index=Math.floor(Math.random()*quotes.length)
     let quote=quotes[index]
     res.send(quote)
-    // res.send("hello")
 });
 mongoose.connect(DATABASE_URL).then(()=>{
         app.listen(PORT, ()=>{
